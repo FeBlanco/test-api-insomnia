@@ -1,1 +1,353 @@
-{"_type":"export","__export_format":4,"__export_date":"2025-05-17T17:34:12.059Z","__export_source":"insomnia.desktop.app:v2023.5.8","resources":[{"_id":"req_b25af3c44715470a888b543e7377172f","parentId":"fld_0b04e85331cb49b598319fd1c30825d8","modified":1635371732147,"created":1635371704168,"url":"https://rocklov-blanco-api.herokuapp.com/","name":"Buscar api","description":"","method":"GET","body":{},"parameters":[],"headers":[],"authentication":{},"metaSortKey":-1635371704169,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"fld_0b04e85331cb49b598319fd1c30825d8","parentId":"wrk_0d9189553e29400e970e4204838204c6","modified":1635371695457,"created":1635371695457,"name":"Buscar","description":"","environment":{},"environmentPropertyOrder":null,"metaSortKey":-1635371695457,"_type":"request_group"},{"_id":"wrk_0d9189553e29400e970e4204838204c6","parentId":null,"modified":1675967938663,"created":1627434518941,"name":"Rocklov","description":"","scope":"collection","_type":"workspace"},{"_id":"req_14d21bf8820442d6aeda201c3466f146","parentId":"fld_6b173b35b82141a8bd99c53cc9eab6e0","modified":1660325966448,"created":1627434632464,"url":"https://rocklov-blanco-api.herokuapp.com/sessions","name":"Login com Sucesso","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n  \"email\": \"blanco@gmail.com\",\n  \"password\": \"pwd123\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_a150a7067c0347278ac1e7cf91ce8f3f"}],"authentication":{},"metaSortKey":-1627434632464,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"fld_6b173b35b82141a8bd99c53cc9eab6e0","parentId":"wrk_0d9189553e29400e970e4204838204c6","modified":1627434545651,"created":1627434545651,"name":"sessions","description":"","environment":{},"environmentPropertyOrder":null,"metaSortKey":-1627434545651,"_type":"request_group"},{"_id":"req_205cd631167147dd870b75f7ff4767a4","parentId":"fld_6b173b35b82141a8bd99c53cc9eab6e0","modified":1627435463000,"created":1627434813525,"url":"https://rocklov-blanco-api.herokuapp.com/sessions","name":"Senha Incorreta","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n  \"email\": \"blanco@gmail.com\",\n  \"password\": \"senha123\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_a150a7067c0347278ac1e7cf91ce8f3f"}],"authentication":{},"metaSortKey":-1626165217395.2188,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_4bc98d15bf6a469f88d7e2cb93002489","parentId":"fld_6b173b35b82141a8bd99c53cc9eab6e0","modified":1627435468883,"created":1627434888145,"url":"https://rocklov-blanco-api.herokuapp.com/sessions","name":"Usuário não existe","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n  \"email\": \"blanco@yahoo.com\",\n  \"password\": \"pwd123\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_a150a7067c0347278ac1e7cf91ce8f3f"}],"authentication":{},"metaSortKey":-1625530509860.8281,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_36d9e7537c6e4179bcbda0ff3900961d","parentId":"fld_6b173b35b82141a8bd99c53cc9eab6e0","modified":1627435473383,"created":1627434942463,"url":"https://rocklov-blanco-api.herokuapp.com/sessions","name":"Email Incorreto","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n  \"email\": \"blanco&gmail.com\",\n  \"password\": \"pwd123\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_a150a7067c0347278ac1e7cf91ce8f3f"}],"authentication":{},"metaSortKey":-1625213156093.6328,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_c9042867c4104e6cb878c31a3192571f","parentId":"fld_6b173b35b82141a8bd99c53cc9eab6e0","modified":1627435475517,"created":1627434975743,"url":"https://rocklov-blanco-api.herokuapp.com/sessions","name":"Email em branco","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n  \"email\": \"\",\n  \"password\": \"pwd123\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_a150a7067c0347278ac1e7cf91ce8f3f"}],"authentication":{},"metaSortKey":-1625054479210.0352,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_f4077f2918dc4c73918a9fb367698f8a","parentId":"fld_6b173b35b82141a8bd99c53cc9eab6e0","modified":1627435479370,"created":1627435009484,"url":"https://rocklov-blanco-api.herokuapp.com/sessions","name":"Senha em branco","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n  \"email\": \"blanco@gmail.com\",\n  \"password\": \"\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_a150a7067c0347278ac1e7cf91ce8f3f"}],"authentication":{},"metaSortKey":-1624975140768.2363,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_37c1fb2ac992468a808806a814b24bbb","parentId":"fld_6b173b35b82141a8bd99c53cc9eab6e0","modified":1627435481065,"created":1627435090794,"url":"https://rocklov-blanco-api.herokuapp.com/sessions","name":"Email não informado","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n  \"password\": \"pwd123\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_a150a7067c0347278ac1e7cf91ce8f3f"}],"authentication":{},"metaSortKey":-1624935471547.337,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_a750a9270d164f4ca235c4b6843cb4ad","parentId":"fld_6b173b35b82141a8bd99c53cc9eab6e0","modified":1635297570441,"created":1627435055392,"url":"","name":"Senha não informada","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n  \"email\": \"blanco@gmail.com\"\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json","id":"pair_a150a7067c0347278ac1e7cf91ce8f3f"}],"authentication":{},"metaSortKey":-1624895802326.4375,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"env_650b19f07ee727a672c4e476f59e853e5996b86a","parentId":"wrk_0d9189553e29400e970e4204838204c6","modified":1627434519536,"created":1627434519536,"name":"Base Environment","data":{},"dataPropertyOrder":null,"color":null,"isPrivate":false,"metaSortKey":1627434519536,"_type":"environment"},{"_id":"jar_650b19f07ee727a672c4e476f59e853e5996b86a","parentId":"wrk_0d9189553e29400e970e4204838204c6","modified":1627434519544,"created":1627434519544,"name":"Default Jar","cookies":[],"_type":"cookie_jar"},{"_id":"spc_9493cfc25fa54d998a3db073242e1d56","parentId":"wrk_0d9189553e29400e970e4204838204c6","modified":1627434518959,"created":1627434518959,"fileName":"Rocklov","contents":"","contentType":"yaml","_type":"api_spec"}]}
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2025-05-17T17:34:12.059Z",
+  "__export_source": "insomnia.desktop.app:v2023.5.8",
+  "resources": [
+    {
+      "_id": "req_b25af3c44715470a888b543e7377172f",
+      "parentId": "fld_0b04e85331cb49b598319fd1c30825d8",
+      "modified": 1635371732147,
+      "created": 1635371704168,
+      "url": "https://rocklov-blanco-api.herokuapp.com/",
+      "name": "Buscar api",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1635371704169,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_0b04e85331cb49b598319fd1c30825d8",
+      "parentId": "wrk_0d9189553e29400e970e4204838204c6",
+      "modified": 1635371695457,
+      "created": 1635371695457,
+      "name": "Buscar",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1635371695457,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_0d9189553e29400e970e4204838204c6",
+      "parentId": null,
+      "modified": 1675967938663,
+      "created": 1627434518941,
+      "name": "Rocklov",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_14d21bf8820442d6aeda201c3466f146",
+      "parentId": "fld_6b173b35b82141a8bd99c53cc9eab6e0",
+      "modified": 1660325966448,
+      "created": 1627434632464,
+      "url": "https://rocklov-blanco-api.herokuapp.com/sessions",
+      "name": "Login com Sucesso",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"email\": \"blanco@gmail.com\",\n  \"password\": \"pwd123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_a150a7067c0347278ac1e7cf91ce8f3f"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1627434632464,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_6b173b35b82141a8bd99c53cc9eab6e0",
+      "parentId": "wrk_0d9189553e29400e970e4204838204c6",
+      "modified": 1627434545651,
+      "created": 1627434545651,
+      "name": "sessions",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1627434545651,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_205cd631167147dd870b75f7ff4767a4",
+      "parentId": "fld_6b173b35b82141a8bd99c53cc9eab6e0",
+      "modified": 1627435463000,
+      "created": 1627434813525,
+      "url": "https://rocklov-blanco-api.herokuapp.com/sessions",
+      "name": "Senha Incorreta",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"email\": \"blanco@gmail.com\",\n  \"password\": \"senha123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_a150a7067c0347278ac1e7cf91ce8f3f"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1626165217395.2188,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_4bc98d15bf6a469f88d7e2cb93002489",
+      "parentId": "fld_6b173b35b82141a8bd99c53cc9eab6e0",
+      "modified": 1627435468883,
+      "created": 1627434888145,
+      "url": "https://rocklov-blanco-api.herokuapp.com/sessions",
+      "name": "Usuário não existe",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"email\": \"blanco@yahoo.com\",\n  \"password\": \"pwd123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_a150a7067c0347278ac1e7cf91ce8f3f"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1625530509860.8281,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_36d9e7537c6e4179bcbda0ff3900961d",
+      "parentId": "fld_6b173b35b82141a8bd99c53cc9eab6e0",
+      "modified": 1627435473383,
+      "created": 1627434942463,
+      "url": "https://rocklov-blanco-api.herokuapp.com/sessions",
+      "name": "Email Incorreto",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"email\": \"blanco&gmail.com\",\n  \"password\": \"pwd123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_a150a7067c0347278ac1e7cf91ce8f3f"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1625213156093.6328,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_c9042867c4104e6cb878c31a3192571f",
+      "parentId": "fld_6b173b35b82141a8bd99c53cc9eab6e0",
+      "modified": 1627435475517,
+      "created": 1627434975743,
+      "url": "https://rocklov-blanco-api.herokuapp.com/sessions",
+      "name": "Email em branco",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"email\": \"\",\n  \"password\": \"pwd123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_a150a7067c0347278ac1e7cf91ce8f3f"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1625054479210.0352,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_f4077f2918dc4c73918a9fb367698f8a",
+      "parentId": "fld_6b173b35b82141a8bd99c53cc9eab6e0",
+      "modified": 1627435479370,
+      "created": 1627435009484,
+      "url": "https://rocklov-blanco-api.herokuapp.com/sessions",
+      "name": "Senha em branco",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"email\": \"blanco@gmail.com\",\n  \"password\": \"\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_a150a7067c0347278ac1e7cf91ce8f3f"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1624975140768.2363,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_37c1fb2ac992468a808806a814b24bbb",
+      "parentId": "fld_6b173b35b82141a8bd99c53cc9eab6e0",
+      "modified": 1627435481065,
+      "created": 1627435090794,
+      "url": "https://rocklov-blanco-api.herokuapp.com/sessions",
+      "name": "Email não informado",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"password\": \"pwd123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_a150a7067c0347278ac1e7cf91ce8f3f"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1624935471547.337,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_a750a9270d164f4ca235c4b6843cb4ad",
+      "parentId": "fld_6b173b35b82141a8bd99c53cc9eab6e0",
+      "modified": 1635297570441,
+      "created": 1627435055392,
+      "url": "",
+      "name": "Senha não informada",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"email\": \"blanco@gmail.com\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_a150a7067c0347278ac1e7cf91ce8f3f"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1624895802326.4375,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_650b19f07ee727a672c4e476f59e853e5996b86a",
+      "parentId": "wrk_0d9189553e29400e970e4204838204c6",
+      "modified": 1627434519536,
+      "created": 1627434519536,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1627434519536,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_650b19f07ee727a672c4e476f59e853e5996b86a",
+      "parentId": "wrk_0d9189553e29400e970e4204838204c6",
+      "modified": 1627434519544,
+      "created": 1627434519544,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_9493cfc25fa54d998a3db073242e1d56",
+      "parentId": "wrk_0d9189553e29400e970e4204838204c6",
+      "modified": 1627434518959,
+      "created": 1627434518959,
+      "fileName": "Rocklov",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}

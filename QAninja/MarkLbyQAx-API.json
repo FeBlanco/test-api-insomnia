@@ -1,1 +1,181 @@
-{"_type":"export","__export_format":4,"__export_date":"2025-05-17T17:30:38.594Z","__export_source":"insomnia.desktop.app:v2023.5.8","resources":[{"_id":"req_2bdea2df44bd44e487257d59dea2f037","parentId":"wrk_0f20accf3cd8441aa560c4935c64ce90","modified":1685993802605,"created":1685992718411,"url":"http://localhost:3333/helper/tasks/Ler um livro de TypeScript","name":"Helpers","description":"","method":"DELETE","body":{},"parameters":[],"headers":[],"authentication":{},"metaSortKey":-1685992718411,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"wrk_0f20accf3cd8441aa560c4935c64ce90","parentId":null,"modified":1685992399568,"created":1685992399568,"name":"Mark L by QAx","description":"","scope":"design","_type":"workspace"},{"_id":"req_395834c59ddf4c35b202caf666b8c2d9","parentId":"wrk_0f20accf3cd8441aa560c4935c64ce90","modified":1672256184135,"created":1671923300399,"url":"http://localhost:3333/tasks","name":"New task","description":"","method":"POST","body":{"mimeType":"application/json","text":"{\n\t\"name\": \"Comprar ketchup\",\n\t\"is_done\": false\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1671923300399,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_d95ea6a7426143bf9cb14f1a3b835cb9","parentId":"wrk_0f20accf3cd8441aa560c4935c64ce90","modified":1671985218757,"created":1671933381914,"url":"http://localhost:3333/tasks/8b161cff-5485-4a06-aaa3-5cde44d34es","name":"Update task","description":"","method":"PUT","body":{"mimeType":"application/json","text":"{\n\t\"is_done\": false\n}"},"parameters":[],"headers":[{"name":"Content-Type","value":"application/json"}],"authentication":{},"metaSortKey":-1671248815126.75,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_91bb036f8992437eaa0401024a951dbb","parentId":"wrk_0f20accf3cd8441aa560c4935c64ce90","modified":1685993491063,"created":1671924620996,"url":"http://localhost:3333/tasks","name":"Task list","description":"","method":"GET","body":{},"parameters":[],"headers":[],"authentication":{},"metaSortKey":-1670574329854.5,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"req_d89574914dbe4ff08cce3e4e54e0f631","parentId":"wrk_0f20accf3cd8441aa560c4935c64ce90","modified":1685992437460,"created":1671932582277,"url":"http://localhost:3333/tasks/3c083eea-3961-4d0b-bba9-c26936ece694","name":"Remove task","description":"","method":"DELETE","body":{},"parameters":[],"headers":[],"authentication":{},"metaSortKey":-1669899844582.25,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"env_a8f2326a45e5467895430f2d8de99266","parentId":"wrk_0f20accf3cd8441aa560c4935c64ce90","modified":1671923298004,"created":1671923298004,"name":"Base Environment","data":{},"dataPropertyOrder":null,"color":null,"isPrivate":false,"metaSortKey":1671923298004,"_type":"environment"},{"_id":"jar_13f79ff9a19043aca58296cc958b9689","parentId":"wrk_0f20accf3cd8441aa560c4935c64ce90","modified":1671923298005,"created":1671923298005,"name":"Default Jar","cookies":[],"_type":"cookie_jar"},{"_id":"spc_77982aad90a44f6990ae7ea18e9bdc00","parentId":"wrk_0f20accf3cd8441aa560c4935c64ce90","modified":1685992399568,"created":1685992399568,"fileName":"Mark L by QAx","contents":"","contentType":"yaml","_type":"api_spec"}]}
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2025-05-17T17:30:38.594Z",
+  "__export_source": "insomnia.desktop.app:v2023.5.8",
+  "resources": [
+    {
+      "_id": "req_2bdea2df44bd44e487257d59dea2f037",
+      "parentId": "wrk_0f20accf3cd8441aa560c4935c64ce90",
+      "modified": 1685993802605,
+      "created": 1685992718411,
+      "url": "http://localhost:3333/helper/tasks/Ler um livro de TypeScript",
+      "name": "Helpers",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1685992718411,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_0f20accf3cd8441aa560c4935c64ce90",
+      "parentId": null,
+      "modified": 1685992399568,
+      "created": 1685992399568,
+      "name": "Mark L by QAx",
+      "description": "",
+      "scope": "design",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_395834c59ddf4c35b202caf666b8c2d9",
+      "parentId": "wrk_0f20accf3cd8441aa560c4935c64ce90",
+      "modified": 1672256184135,
+      "created": 1671923300399,
+      "url": "http://localhost:3333/tasks",
+      "name": "New task",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Comprar ketchup\",\n\t\"is_done\": false\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1671923300399,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_d95ea6a7426143bf9cb14f1a3b835cb9",
+      "parentId": "wrk_0f20accf3cd8441aa560c4935c64ce90",
+      "modified": 1671985218757,
+      "created": 1671933381914,
+      "url": "http://localhost:3333/tasks/8b161cff-5485-4a06-aaa3-5cde44d34es",
+      "name": "Update task",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"is_done\": false\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1671248815126.75,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_91bb036f8992437eaa0401024a951dbb",
+      "parentId": "wrk_0f20accf3cd8441aa560c4935c64ce90",
+      "modified": 1685993491063,
+      "created": 1671924620996,
+      "url": "http://localhost:3333/tasks",
+      "name": "Task list",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1670574329854.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_d89574914dbe4ff08cce3e4e54e0f631",
+      "parentId": "wrk_0f20accf3cd8441aa560c4935c64ce90",
+      "modified": 1685992437460,
+      "created": 1671932582277,
+      "url": "http://localhost:3333/tasks/3c083eea-3961-4d0b-bba9-c26936ece694",
+      "name": "Remove task",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1669899844582.25,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_a8f2326a45e5467895430f2d8de99266",
+      "parentId": "wrk_0f20accf3cd8441aa560c4935c64ce90",
+      "modified": 1671923298004,
+      "created": 1671923298004,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1671923298004,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_13f79ff9a19043aca58296cc958b9689",
+      "parentId": "wrk_0f20accf3cd8441aa560c4935c64ce90",
+      "modified": 1671923298005,
+      "created": 1671923298005,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_77982aad90a44f6990ae7ea18e9bdc00",
+      "parentId": "wrk_0f20accf3cd8441aa560c4935c64ce90",
+      "modified": 1685992399568,
+      "created": 1685992399568,
+      "fileName": "Mark L by QAx",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}

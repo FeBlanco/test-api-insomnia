@@ -1,1 +1,92 @@
-{"_type":"export","__export_format":4,"__export_date":"2025-05-17T17:32:04.702Z","__export_source":"insomnia.desktop.app:v2023.5.8","resources":[{"_id":"req_95e8b1cb8ea846e692dcc752beab9d26","parentId":"fld_78df062311dc45e0a8bc5bc1ed041c15","modified":1661282831596,"created":1661281221526,"url":"http://localhost:3333/helpers-reset","name":"New Request","description":"","method":"DELETE","body":{},"parameters":[{"id":"pair_757001c5f869458e86d772c0fa762f8f","name":"instagram","value":"@becca_milano","description":""}],"headers":[],"authentication":{},"metaSortKey":-1661281221526,"isPrivate":false,"settingStoreCookies":true,"settingSendCookies":true,"settingDisableRenderRequestBody":false,"settingEncodeUrl":true,"settingRebuildPath":true,"settingFollowRedirects":"global","_type":"request"},{"_id":"fld_78df062311dc45e0a8bc5bc1ed041c15","parentId":"wrk_8744a89447294a7f9abd4abf488063d6","modified":1661281215212,"created":1661281215212,"name":"Helpers","description":"","environment":{},"environmentPropertyOrder":null,"metaSortKey":-1661281215212,"_type":"request_group"},{"_id":"wrk_8744a89447294a7f9abd4abf488063d6","parentId":null,"modified":1661281158715,"created":1661281158715,"name":"QTruck","description":"","scope":"collection","_type":"workspace"},{"_id":"env_aa96a4dd93b6f9f5e4171e7c8e2ee6c575948b9c","parentId":"wrk_8744a89447294a7f9abd4abf488063d6","modified":1661281158739,"created":1661281158739,"name":"Base Environment","data":{},"dataPropertyOrder":null,"color":null,"isPrivate":false,"metaSortKey":1661281158739,"_type":"environment"},{"_id":"jar_aa96a4dd93b6f9f5e4171e7c8e2ee6c575948b9c","parentId":"wrk_8744a89447294a7f9abd4abf488063d6","modified":1661281158745,"created":1661281158745,"name":"Default Jar","cookies":[],"_type":"cookie_jar"},{"_id":"spc_2941d5b15f134c3faa18674f7f81ed47","parentId":"wrk_8744a89447294a7f9abd4abf488063d6","modified":1661281158727,"created":1661281158727,"fileName":"QTruck","contents":"","contentType":"yaml","_type":"api_spec"}]}
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2025-05-17T17:32:04.702Z",
+  "__export_source": "insomnia.desktop.app:v2023.5.8",
+  "resources": [
+    {
+      "_id": "req_95e8b1cb8ea846e692dcc752beab9d26",
+      "parentId": "fld_78df062311dc45e0a8bc5bc1ed041c15",
+      "modified": 1661282831596,
+      "created": 1661281221526,
+      "url": "http://localhost:3333/helpers-reset",
+      "name": "New Request",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [
+        {
+          "id": "pair_757001c5f869458e86d772c0fa762f8f",
+          "name": "instagram",
+          "value": "@becca_milano",
+          "description": ""
+        }
+      ],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1661281221526,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_78df062311dc45e0a8bc5bc1ed041c15",
+      "parentId": "wrk_8744a89447294a7f9abd4abf488063d6",
+      "modified": 1661281215212,
+      "created": 1661281215212,
+      "name": "Helpers",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1661281215212,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_8744a89447294a7f9abd4abf488063d6",
+      "parentId": null,
+      "modified": 1661281158715,
+      "created": 1661281158715,
+      "name": "QTruck",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "env_aa96a4dd93b6f9f5e4171e7c8e2ee6c575948b9c",
+      "parentId": "wrk_8744a89447294a7f9abd4abf488063d6",
+      "modified": 1661281158739,
+      "created": 1661281158739,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1661281158739,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_aa96a4dd93b6f9f5e4171e7c8e2ee6c575948b9c",
+      "parentId": "wrk_8744a89447294a7f9abd4abf488063d6",
+      "modified": 1661281158745,
+      "created": 1661281158745,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_2941d5b15f134c3faa18674f7f81ed47",
+      "parentId": "wrk_8744a89447294a7f9abd4abf488063d6",
+      "modified": 1661281158727,
+      "created": 1661281158727,
+      "fileName": "QTruck",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
