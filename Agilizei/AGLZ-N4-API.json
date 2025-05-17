@@ -1,0 +1,386 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2025-05-17T17:11:15.664Z",
+  "__export_source": "insomnia.desktop.app:v2023.5.8",
+  "resources": [
+    {
+      "_id": "req_26ee4d2db8f1404b8b316390ee67681e",
+      "parentId": "fld_51288052315b47d783e20547cf8464d3",
+      "modified": 1666018530622,
+      "created": 1665776369603,
+      "url": "https://treinamento-api.herokuapp.com/auth",
+      "name": "Autenticar",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n    \"username\" : \"admin\",\n    \"password\" : \"password123\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_90afee1c03154712bff0b0b3175d0c9a"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1601771605081,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_51288052315b47d783e20547cf8464d3",
+      "parentId": "wrk_5b37bad9715c4544b8b0dff46de26952",
+      "modified": 1665776369601,
+      "created": 1665776369601,
+      "name": "Auth",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1601771599201,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_5b37bad9715c4544b8b0dff46de26952",
+      "parentId": null,
+      "modified": 1665776369566,
+      "created": 1665776369566,
+      "name": "AGLZ #N4",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_aea47611ef4b4d28bd5c88ac8d877efd",
+      "parentId": "fld_0dd4257212da476d9f00d284f8a52fa6",
+      "modified": 1665862531159,
+      "created": 1665776369592,
+      "url": "https://treinamento-api.herokuapp.com/booking",
+      "name": "Criar reserva",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n    \"firstname\" : \"Jim\",\n    \"lastname\" : \"Brown\",\n    \"totalprice\" : 111,\n    \"depositpaid\" : true,\n    \"bookingdates\" : {\n        \"checkin\" : \"2020-01-01\",\n        \"checkout\" : \"2020-01-02\"\n    },\n    \"additionalneeds\" : \"Breakfast\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_b7096c86fd264856ad6f5b37d8c6dc7a"
+        },
+        {
+          "name": "Accept",
+          "value": "application/json",
+          "description": "",
+          "id": "pair_dfa0fbf6bce14d1a94f711cebdb076fe"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1601771558615,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_0dd4257212da476d9f00d284f8a52fa6",
+      "parentId": "wrk_5b37bad9715c4544b8b0dff46de26952",
+      "modified": 1665776369577,
+      "created": 1665776369577,
+      "name": "Booking",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1601770990404,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_e43266aa783f4643b3962642ee4498cb",
+      "parentId": "fld_0dd4257212da476d9f00d284f8a52fa6",
+      "modified": 1665776369578,
+      "created": 1665776369578,
+      "url": "https://treinamento-api.herokuapp.com/booking/11",
+      "name": "Obter reserva",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Accept",
+          "value": "application/json",
+          "description": "",
+          "id": "pair_1a9bb2f3f23f4a9caad7b4c245bbb7d4"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1601771558590,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_5d767071ede64a64ba02b57d11aeeee7",
+      "parentId": "fld_0dd4257212da476d9f00d284f8a52fa6",
+      "modified": 1665859964114,
+      "created": 1665776369582,
+      "url": "https://treinamento-api.herokuapp.com/booking/1",
+      "name": "Listar reservas",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1601771558577.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_c0327146976140e2b5bf31cae2a727b3",
+      "parentId": "fld_0dd4257212da476d9f00d284f8a52fa6",
+      "modified": 1665776369586,
+      "created": 1665776369586,
+      "url": "https://treinamento-api.herokuapp.com/booking",
+      "name": "Listar reservas (nomes)",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "name": "firstname",
+          "value": "Ronaldo",
+          "disabled": false,
+          "id": "pair_f4954e2d8aac4d11bf8872176ab39db4"
+        },
+        {
+          "name": "lastname",
+          "value": "Fenomeno",
+          "description": "",
+          "id": "pair_e3018a67def54748b34e88027b3cab41",
+          "disabled": true
+        }
+      ],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1601771558571.25,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_86b7a54ae4f444f682be6563a3166d23",
+      "parentId": "fld_0dd4257212da476d9f00d284f8a52fa6",
+      "modified": 1665776369589,
+      "created": 1665776369589,
+      "url": "https://treinamento-api.herokuapp.com/booking",
+      "name": "Listar reservas (datas)",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "name": "checkin",
+          "value": "2018-01-01",
+          "disabled": false,
+          "id": "pair_bccde15294b743b3ba142ff83a4a0a33"
+        }
+      ],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1601771558568.125,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_26ad21952d3c4a5c966083e3b433606b",
+      "parentId": "fld_0dd4257212da476d9f00d284f8a52fa6",
+      "modified": 1666016885212,
+      "created": 1665776369596,
+      "url": "https://treinamento-api.herokuapp.com/booking/522222",
+      "name": "Editar reserva",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"firstname\": \"Jim\",\n  \"lastname\": \"James\",\n  \"totalprice\": 111,\n  \"depositpaid\": true,\n  \"bookingdates\": {\n    \"checkin\": \"2020-01-01\",\n    \"checkout\": \"2020-01-02\"\n  },\n  \"additionalneeds\": \"Breakfast\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_4aa6221324a448dd85c2182794e7b36a"
+        },
+        {
+          "name": "Accept",
+          "value": "application/json",
+          "id": "pair_ee4820954f2f406fbcec3359070f27d6"
+        },
+        {
+          "name": "Cookie",
+          "value": "token=2c94abd8e3d9bf0",
+          "id": "pair_757e104989f64abaa2edf36e08fe4896",
+          "disabled": false
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1601771558566.5625,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_4f9461d0b37c430fa9b3f497ed541ee9",
+      "parentId": "fld_0dd4257212da476d9f00d284f8a52fa6",
+      "modified": 1665776369594,
+      "created": 1665776369594,
+      "url": "https://treinamento-api.herokuapp.com/booking/51",
+      "name": "Excluir reserva",
+      "description": "",
+      "method": "DELETE",
+      "body": {
+        "mimeType": "application/json"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_6a34b30c7d044e03a665ab7ecf3cb5f2"
+        },
+        {
+          "name": "Cookie",
+          "value": "token=0da51b0ba74185c",
+          "id": "pair_812e0b5b5c464a4ca2004434f282dc95",
+          "disabled": true
+        },
+        {
+          "name": "Authorisation",
+          "value": "Basic YWRtaW46cGFzc3dvcmQxMjM=]",
+          "description": "",
+          "id": "pair_07dd6c4715e44cf0ae6be63440e7e8e7",
+          "disabled": false
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1601771558565,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_e91230e88714442f9f6ade49609bcfcd",
+      "parentId": "fld_29ca3e9f383545e1849a9cb4c4dbc6b1",
+      "modified": 1665776369608,
+      "created": 1665776369608,
+      "url": "https://treinamento-api.herokuapp.com/ping",
+      "name": "Healthcheck",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [],
+      "authentication": {},
+      "metaSortKey": -1601771844969,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_29ca3e9f383545e1849a9cb4c4dbc6b1",
+      "parentId": "wrk_5b37bad9715c4544b8b0dff46de26952",
+      "modified": 1665776369606,
+      "created": 1665776369606,
+      "name": "Ping",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1601770990354,
+      "_type": "request_group"
+    },
+    {
+      "_id": "env_2f12ca747adb493aa6a0a74fa9db639a",
+      "parentId": "wrk_5b37bad9715c4544b8b0dff46de26952",
+      "modified": 1665776369567,
+      "created": 1665776369567,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1601770978748,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_2811a8d9ff684287bc5c9b5dd83c9f75",
+      "parentId": "wrk_5b37bad9715c4544b8b0dff46de26952",
+      "modified": 1665776369572,
+      "created": 1665776369572,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_b0b2c4d792844ef08dbceda078b72004",
+      "parentId": "wrk_5b37bad9715c4544b8b0dff46de26952",
+      "modified": 1665776369618,
+      "created": 1665776369574,
+      "fileName": "AGLZ #N4",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
